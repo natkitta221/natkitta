@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/about', function () {
@@ -14,10 +14,29 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
-Route::get('/student/{id}', function ($id) {
-    return view('student', ['id' => $id]);
-})->name('student.profile');
+Route::get('/about2', function () {
+    $name = "Natkitta Kingchaiyaphum" ;
+    $date = "6 กรกฎาคม 2026";
+    return view('about2', compact('name' , 'date'));
+})->name("about2");
 
-Route::fallback(function () {
-    return "ไม่พบหน้าเว็บ";
-});
+Route::get('/blog2', function () {
+    $blog2 = [
+        [
+        'title' => 'บทความที่ 1',
+        'content' => 'เนื้อหาบทความที่ 1',
+        'status' => true 
+        ],
+        [
+        'title' => 'บทความที่ 2',
+        'content' => 'เนื้อหาบทความที่ 2',
+        'status' => true 
+        ],
+        [
+        'title' => 'บทความที่ 3',
+        'content' => 'เนื้อหาบทความที่ 3',
+        'status' => false 
+        ],
+    ];
+    return view("blog2", compact('blog2'));
+    })->name("blog2");
