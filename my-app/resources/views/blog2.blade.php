@@ -4,15 +4,30 @@
 
 
 @section('content')
-    <h2>บทความทั้งหมด</h2>
-    <hr>
-    @foreach ($blog2 as $item)
-        <h2>{{$item['title']}}</h2>
-        <p>{{$item['content']}}</p>
-        @if ($item['status'] == true)
-            <p class="text-success">สถานะ : เผยแพร่</p>
-        @else
-            <p class="text-danger">สถานะ : ไม่เผยแพร่</p>
-        @endif
-    @endforeach
+    <h2 class="text text-center py-2">
+        บทความทั้งหมด</h2>
+    <table class="table table-bordered text-center">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Content</th>
+                <th scope="col">Ststus</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($blog2 as $item)
+                <tr>
+                    <td>{{ $item['title'] }}</td>
+                    <td>{{ $item['content'] }}</td>
+                    <td>
+                        @if ($item['status'] == true)
+                            <span class="btn btn-success">เผยแพร่</span>
+                        @else
+                            <span class="btn btn-danger">ไม่เผยแพร่</span>
+                        @endif
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
 @endsection

@@ -26,7 +26,7 @@
             color: #de4444 !important;
             font-weight: 700;
         }
-        /* ตกแต่ง List Group ให้น่าอ่านและละมุนขึ้น */
+        
         .list-group-item {
             border: 1px solid #ffe3e3;
             margin-bottom: 8px;

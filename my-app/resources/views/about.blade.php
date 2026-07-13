@@ -6,7 +6,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* จัดให้อยู่ตรงกลางหน้าจอ และปรับพื้นหลังเป็นสีแดงละมุน */
+       
         body {
             background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
             min-height: 100vh;
@@ -15,7 +15,7 @@
             justify-content: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        /* ตกแต่ง Card ให้ละมุนและมีมิติ */
+       
         .card {
             border: none;
             border-radius: 20px !important;
@@ -25,7 +25,7 @@
             max-width: 500px;
             width: 100%;
         }
-        /* ปรับสีหัวข้อและปุ่มให้สดใสโทนแดง */
+        
         .text-warning {
             color: #de4444 !important;
             font-weight: 700;

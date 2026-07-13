@@ -23,7 +23,7 @@
             width: 100%;
             padding: 10px;
         }
-        /* ปรับกรอบรูปโปรไฟล์เป็นสีแดงละมุน */
+       
         .rounded-circle {
             border-color: #ff8787 !important;
             box-shadow: 0 5px 15px rgba(255, 135, 135, 0.4);
@@ -32,7 +32,7 @@
             color: #de4444 !important;
             font-weight: 700;
         }
-        /* ปรับแต่งตารางให้ดูซอฟต์และโมเดิร์น */
+       
         .table {
             border-color: #ffe3e3;
         }

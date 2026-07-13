@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* ตกแต่งโครงสร้างพื้นหลังและการจัดวางตรงกลาง */
+        
         body {
             background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
             min-height: 100vh;
@@ -15,20 +15,20 @@
             flex-direction: column;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        /* ให้ Container หลักขยายเต็มเพื่อดัน Card มาตรงกลาง */
+        
         .main-wrapper {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        /* Navbar โทนแดงละมุน-สดใส */
+        
         .navbar {
             background: linear-gradient(90deg, #ff6b6b 0%, #ff8787 100%) !important;
             box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
             padding: 12px 0;
         }
-        /* ปรับแต่งปุ่มบนเมนูให้เข้าธีม */
+        
         .navbar .btn {
             border: none !important;
             margin-left: 5px;
@@ -46,7 +46,7 @@
             opacity: 0.95;
         }
 
-        /* ตกแต่ง Card หน้าแรก */
+        
         .card {
             border: none;
             border-radius: 25px !important;
@@ -63,7 +63,7 @@
         .lead {
             color: #665858;
         }
-        /* ปุ่มอ่านบทความหลัก */
+        
         .btn-success {
             background-color: #ff6b6b !important;
             border-color: #ff6b6b !important;
